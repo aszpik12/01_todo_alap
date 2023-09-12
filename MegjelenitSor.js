@@ -11,12 +11,15 @@ class MegjelenitSor {
     console.log(this.pipaElem);
     this.pipaElem.on("click", () => {
       this.sorElem.css("background-color", "lightgreen");
+      this.#esemenyTrigger("pipa");
     });
     this.megseElem.on("click", () => {
       this.sorElem.css("background-color", "white");
+      this.#esemenyTrigger("megse");
     });
     this.torolElem.on("click", () => {
       this.sorElem.remove();
+      this.#esemenyTrigger("torles");
     });
   }
   #sor() {
